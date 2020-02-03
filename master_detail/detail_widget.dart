@@ -13,7 +13,9 @@ abstract class DetailWidget extends StatelessWidget {
   /// override this method in new Widget
   /// extended of Detail Widget for
   /// get selected row in MasterWidget
-  selectRow(int row){}
+  selectRow(int row);
+
+  DetailWidget copy();
 
   @override
   Widget build(BuildContext context) {

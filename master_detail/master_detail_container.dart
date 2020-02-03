@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kontragent_flutter/master_detail/detail_widget.dart';
+import 'detail_widget.dart';
 import 'master_widget.dart';
 
 //  ---------------------
@@ -37,17 +37,18 @@ class _MasterDetailContainerState extends State<MasterDetailContainer> {
 
   _selectRowOnMobile(int id)
   {
+    DetailWidget dw = detailWidget.copy();
     Navigator.push(
         context,
         MaterialPageRoute(
           builder: (BuildContext context) {
-            return detailWidget;
+            return dw;
           },
         ),
     );
 
     // TODO: do it better
-    detailWidget.selectRow(id);
+    dw.selectRow(id);
   }
 
   /// In tablet version, Master and Detail widgets are located
