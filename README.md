@@ -37,12 +37,12 @@ MyMaster({@required this.inputArray, bool isTablet}) : super(
   );
 ```
 <br>
-2 - create Detail Controller inherited *DetailWidget*<br>
+2 - create Detail Controller inherited DetailWidget<br>
 &nbsp; a) override selectRow(int row)<br>
 &nbsp; b) override copy()<br>
 &nbsp; c) add container<br>
 <br>
-*Example*
+Example
 
 ``````
 class MyDetail extends DetailWidget {
@@ -69,9 +69,9 @@ class MyDetail extends DetailWidget {
 ``````
 
 <br>
-3 - create Controller with *MasterDetailContainer*
+3 - create Controller with MasterDetailContainer<br>
 <br>
-*Example*
+Example
 
 ``````
 
